@@ -1,0 +1,79 @@
+.project {
+	display: grid;
+	gap: 57rem;
+	margin-bottom: 107rem;
+	perspective: 1000px;
+
+	&-item {
+		display: flex;
+		align-items: center;
+		gap: 35rem;
+		justify-content: space-between;
+
+		@include tablet {
+			flex-direction: column;
+		}
+
+		&:nth-child(even) {
+			.project-item__img {
+				order: 2;
+			}
+		}
+
+		&__img {
+			flex-basis: 548rem;
+			max-width: 557rem;
+
+			@include tablet {
+				flex-basis: initial;
+			}
+		}
+
+		&__info {
+			display: flex;
+			flex-direction: column;
+			gap: 30rem;
+			align-items: flex-start;
+			max-width: 582rem;
+
+			@include tablet {
+				max-width: 100%;
+			}
+		}
+
+		&__title {
+			font-family: var(--font-family);
+			font-weight: 700;
+			font-size: 42rem;
+
+			@include tablet {
+				font-size: 26rem;
+				text-align: center;
+			}
+		}
+
+		&__desc {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 16rem;
+			line-height: 162%;
+			@include tablet {
+				text-align: center;
+			}
+		}
+
+		&__btn {
+			background: linear-gradient(-45deg, #4800ff, #7653cf, #150dff, #4c4cb5);
+			background-size: 400% 400%;
+			border-radius: 4rem;
+			font-weight: 400;
+			font-size: 14rem;
+			padding: 7rem 15rem;
+			animation: gradient 4s ease infinite;
+			@include tablet{
+				margin-inline: auto;
+				padding: 17rem 35rem;
+			}
+		}
+	}
+}

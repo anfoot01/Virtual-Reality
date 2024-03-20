@@ -1,0 +1,115 @@
+.contact {
+    &__container {
+        display: flex;
+        gap: 42rem;
+        margin-bottom: 32rem;
+        @include tablet{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+        padding-right: 94rem;
+        @include tablet{
+            padding-right: 0;
+            margin-inline: auto;
+        }
+    }
+
+    &__service {
+        display: flex;
+        flex-direction: column;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: var(--font-family);
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 40rem;
+        @include tablet{
+            padding-right: 0;
+        }
+    }
+    &__company {
+        display: flex;
+        flex-direction: column;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: var(--font-family);
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 40rem;
+        padding-right: 55rem;
+        @include tablet{
+            padding-right: 0;
+        }
+    }
+    &__supports {
+        display: flex;
+        flex-direction: column;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: var(--font-family);
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 40rem;
+        padding-right: 55rem;
+        @include tablet{
+            padding-right: 0;
+        }
+    }
+    &__resources {
+        display: flex;
+        flex-direction: column;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: var(--font-family);
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 40rem;
+        @include tablet{
+            padding-right: 0;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        gap: 5rem;
+        cursor: pointer;
+        transform: translateY(10rem);
+        @include tablet{
+            margin-inline: auto;
+        }
+        &__svg {
+            color: rgb(116, 42, 212);
+        }
+
+        &__title {
+            display: flex;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            font-family: var(--second-family);
+            font-size: 20rem;
+            font-weight: 500;
+            line-height: 24rem;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        max-width: 195rem;
+    }
+
+    &__info svg {
+        transform: translateY(5rem);
+    }
+
+    &__get-in-touch {
+        display: flex;
+        gap: 15rem;
+    }
+    &__bold{
+        font-weight: 500;
+    }
+}

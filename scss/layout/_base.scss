@@ -1,0 +1,48 @@
+html {
+	font-size: 1px;
+
+	@include tablet {
+		font-size: 0.8px;
+	}
+
+	@include mobile {
+		font-size: 0.7px;
+	}
+}
+
+body {
+	font-family: var(--font-family);
+	background: #111827;
+	color: #fff;
+	font-size: 16rem;
+}
+
+button {
+	display: inline-block;
+	border: 0;
+	cursor: pointer;
+	outline: 0;
+	font-family: var(--font-family);
+}
+
+.container {
+	max-width: 1170rem + 40rem;
+	padding: 0 20rem;
+	margin-inline: auto;
+}
+
+.title {
+	color: rgb(255, 255, 255);
+	font-family: var(--font-family);
+	font-size: 42rem;
+	font-weight: 700;
+	line-height: 55rem;
+}
+
+.desc {
+	color: rgb(255, 255, 255);
+	font-family: var(--font-family);
+	font-size: 16rem;
+	font-weight: 400;
+	line-height: 26rem;
+}

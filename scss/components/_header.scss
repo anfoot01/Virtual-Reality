@@ -1,0 +1,30 @@
+.header {
+	padding: 20rem;
+    &__container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: flex;
+		gap: 5rem;
+        cursor: pointer;
+		transform: translateY(10rem);
+		&__svg {
+			color: rgb(116, 42, 212);
+		}
+
+		&__title {
+			display: flex;
+			align-items: center;
+			color: rgb(255, 255, 255);
+			font-family: var(--second-family);
+			font-size: 20rem;
+			font-weight: 500;
+			line-height: 24rem;
+		}
+	}	
+}
+
+

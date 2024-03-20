@@ -1,0 +1,61 @@
+.team {
+    margin-bottom: 120rem;
+    &__info {
+        margin-bottom: 40rem;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30rem;
+    }
+
+    &__desc {
+        max-width: 480rem;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    &__teammates {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        gap: 30rem;
+    }
+
+    &__teammate {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 34rem;
+        padding: 32rem 57rem 35rem 58rem;
+
+        &__img {
+            text-align: center;
+        }
+
+        &__name {
+            color: rgb(255, 255, 255);
+            font-family: var(--font-family);
+            font-size: 28rem;
+            font-weight: 500;
+            line-height: 36rem;
+            margin-bottom: 7rem;
+            text-align: center;
+        }
+
+        &__role {
+            color: rgb(255, 255, 255);
+            font-family: var(--font-family);
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 21rem;
+            text-align: center;
+            margin-bottom: 11rem;
+        }
+
+        &__get-in-touch {
+            display: flex;
+            align-items: center;
+            gap: 12rem;
+            max-width: 108rem;
+            margin-inline: auto;
+        }
+    }
+}

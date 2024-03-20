@@ -1,0 +1,139 @@
+.slide-in-top {
+	animation: slide-in-top 2s cubic-bezier(.25, .46, .45, .94) both;
+}
+.header-jumping {
+	animation: jumping 1s infinite alternate ease-in-out;
+	animation-iteration-count: 1;
+	animation-delay: 0.8s;
+}
+.header-invisiable {
+	animation: invisiable 3s infinite alternate ease-in-out;
+	animation-iteration-count: 1;
+}
+.slide-in-blurred-top {
+	animation: slide-in-blurred-top .6s cubic-bezier(.23, 1.000, .32, 1.000) both;
+}
+
+.slide-in-fwd-center {
+	animation: slide-in-fwd-center .2s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.heartbeat {
+	animation: heartbeat 2s ease-in-out infinite both;
+	animation-delay: 2s;
+}
+@keyframes jumping{
+	0% {
+		transform: translateY(0);
+	}
+	40%{
+		transform: translateX(-50rem);
+	}
+	50%{
+		transform: translateX(50rem);
+	}
+	60%{
+		transform: translateX(-50rem);
+	}
+	70%{
+		transform: translateX(50rem);
+	}
+	80%{
+		transform: translateX(-50rem);
+	}
+	90%{
+		transform: translateX(50rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes invisiable{
+	0% {
+		opacity: 0;
+	}
+    40%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes slide-in-top {
+	0% {
+		transform: translateY(-1000px);
+		opacity: 0
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1
+	}
+}
+
+@keyframes slide-in-blurred-top {
+	0% {
+		transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+		transform-origin: 50% 0;
+		filter: blur(40px);
+		opacity: 0
+	}
+
+	100% {
+		transform: translateY(0) scaleY(1) scaleX(1);
+		transform-origin: 50% 50%;
+		filter: blur(0);
+		opacity: 1
+	}
+}
+
+@keyframes slide-in-fwd-center {
+	0% {
+		transform: translateZ(-1400px);
+		opacity: 0
+	}
+
+	100% {
+		transform: translateZ(0);
+		opacity: 1
+	}
+}
+
+@keyframes heartbeat {
+	from {
+		transform: scale(1);
+		transform-origin: center center;
+		animation-timing-function: ease-out;
+	}
+
+	10% {
+		transform: scale(0.91);
+		animation-timing-function: ease-in;
+	}
+
+	17% {
+		transform: scale(0.98);
+		animation-timing-function: ease-out;
+	}
+
+	33% {
+		transform: scale(0.87);
+		animation-timing-function: ease-in;
+	}
+
+	45% {
+		transform: scale(1);
+		animation-timing-function: ease-out;
+	}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

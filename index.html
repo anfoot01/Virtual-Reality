@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<link rel="stylesheet" href="style.css">
+
+	<title>Virtual Reality</title>
+</head>
+
+<body>
+	<header class="header header-invisiable">
+		<div class="header__container container header-jumping">
+
+			<div class="header__logo">
+				<svg class="header__logo__svg" width="35.000000" height="35.000000" viewBox="0 0 35 35" fill="none"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<desc>
+						Created with Pixso.
+					</desc>
+					<defs>
+						<linearGradient id="paint_linear_1_527_0" x1="12.635010" y1="-7.010573" x2="23.860878"
+							y2="44.628647" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+						<linearGradient id="paint_linear_1_528_0" x1="6.105958" y1="-1.296721" x2="9.664240"
+							y2="4.669323" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+						<linearGradient id="paint_linear_1_529_0" x1="0.974396" y1="-0.126441" x2="2.273496"
+							y2="16.242992" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+						<linearGradient id="paint_linear_1_530_0" x1="25.298660" y1="29.969917" x2="28.856882"
+							y2="35.936920" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+						<linearGradient id="paint_linear_1_531_0" x1="32.240047" y1="19.068146" x2="33.537361"
+							y2="35.447659" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+						<linearGradient id="paint_linear_1_532_0" x1="32.239998" y1="-0.125222" x2="33.537209"
+							y2="16.248714" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+						<linearGradient id="paint_linear_1_533_0" x1="25.299362" y1="-1.297238" x2="28.858925"
+							y2="4.670064" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+						<linearGradient id="paint_linear_1_534_0" x1="6.104044" y1="29.969574" x2="9.663598"
+							y2="35.937031" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+						<linearGradient id="paint_linear_1_535_0" x1="0.973001" y1="19.069839" x2="2.270223"
+							y2="35.443806" gradientUnits="userSpaceOnUse">
+							<stop stop-color="currentColor" />
+							<stop offset="1.000000" stop-color="currentColor" />
+						</linearGradient>
+					</defs>
+					<path id="Vector"
+						d="M27.97 9.65C28.56 9.49 29.08 9.15 29.45 8.66C29.82 8.18 30.03 7.59 30.03 6.98L30.03 6.97C30.03 6.24 29.74 5.54 29.22 5.02C28.7 4.5 28 4.21 27.27 4.21L27.26 4.21C26.65 4.21 26.06 4.42 25.58 4.79C25.09 5.16 24.75 5.68 24.59 6.27C24.14 7.9 23.16 9.35 21.81 10.37C20.46 11.4 18.82 11.96 17.12 11.96C15.42 11.96 13.78 11.4 12.43 10.37C11.08 9.35 10.1 7.9 9.65 6.27C9.49 5.68 9.15 5.16 8.66 4.79C8.18 4.42 7.59 4.21 6.98 4.21L6.97 4.21C6.24 4.21 5.54 4.5 5.02 5.02C4.5 5.54 4.21 6.24 4.21 6.97L4.21 6.98C4.21 7.59 4.42 8.18 4.79 8.66C5.16 9.15 5.68 9.49 6.27 9.65C7.9 10.1 9.35 11.08 10.37 12.43C11.4 13.78 11.96 15.42 11.96 17.12C11.96 18.82 11.4 20.46 10.37 21.81C9.35 23.16 7.9 24.14 6.27 24.59C5.68 24.75 5.16 25.09 4.79 25.58C4.42 26.06 4.21 26.65 4.21 27.26L4.21 27.27C4.21 28 4.5 28.7 5.02 29.22C5.54 29.74 6.24 30.03 6.97 30.03L6.98 30.03C7.59 30.03 8.18 29.82 8.66 29.45C9.15 29.08 9.49 28.56 9.65 27.97C10.1 26.34 11.08 24.89 12.43 23.87C13.78 22.84 15.42 22.28 17.12 22.28C18.82 22.28 20.46 22.84 21.81 23.87C23.16 24.89 24.14 26.34 24.59 27.97C24.75 28.56 25.09 29.08 25.58 29.45C26.06 29.82 26.65 30.03 27.26 30.03L27.27 30.03C28 30.03 28.7 29.74 29.22 29.22C29.74 28.7 30.03 28 30.03 27.27L30.03 27.26C30.03 26.65 29.82 26.06 29.45 25.58C29.08 25.09 28.56 24.75 27.97 24.59C26.34 24.14 24.9 23.16 23.87 21.81C22.84 20.46 22.28 18.82 22.28 17.12C22.28 15.42 22.84 13.78 23.87 12.43C24.9 11.08 26.34 10.1 27.97 9.65L27.97 9.65Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M27.97 9.65C28.56 9.49 29.08 9.15 29.45 8.66C29.82 8.18 30.03 7.59 30.03 6.98L30.03 6.97C30.03 6.24 29.74 5.54 29.22 5.02C28.7 4.5 28 4.21 27.27 4.21L27.26 4.21C26.65 4.21 26.06 4.42 25.58 4.79C25.09 5.16 24.75 5.68 24.59 6.27C24.14 7.9 23.16 9.35 21.81 10.37C20.46 11.4 18.82 11.96 17.12 11.96C15.42 11.96 13.78 11.4 12.43 10.37C11.08 9.35 10.1 7.9 9.65 6.27C9.49 5.68 9.15 5.16 8.66 4.79C8.18 4.42 7.59 4.21 6.98 4.21L6.97 4.21C6.24 4.21 5.54 4.5 5.02 5.02C4.5 5.54 4.21 6.24 4.21 6.97L4.21 6.98C4.21 7.59 4.42 8.18 4.79 8.66C5.16 9.15 5.68 9.49 6.27 9.65C7.9 10.1 9.35 11.08 10.37 12.43C11.4 13.78 11.96 15.42 11.96 17.12C11.96 18.82 11.4 20.46 10.37 21.81C9.35 23.16 7.9 24.14 6.27 24.59C5.68 24.75 5.16 25.09 4.79 25.58C4.42 26.06 4.21 26.65 4.21 27.26L4.21 27.27C4.21 28 4.5 28.7 5.02 29.22C5.54 29.74 6.24 30.03 6.97 30.03L6.98 30.03C7.59 30.03 8.18 29.82 8.66 29.45C9.15 29.08 9.49 28.56 9.65 27.97C10.1 26.34 11.08 24.89 12.43 23.87C13.78 22.84 15.42 22.28 17.12 22.28C18.82 22.28 20.46 22.84 21.81 23.87C23.16 24.89 24.14 26.34 24.59 27.97C24.75 28.56 25.09 29.08 25.58 29.45C26.06 29.82 26.65 30.03 27.26 30.03L27.27 30.03C28 30.03 28.7 29.74 29.22 29.22C29.74 28.7 30.03 28 30.03 27.27L30.03 27.26C30.03 26.65 29.82 26.06 29.45 25.58C29.08 25.09 28.56 24.75 27.97 24.59C26.34 24.14 24.9 23.16 23.87 21.81C22.84 20.46 22.28 18.82 22.28 17.12C22.28 15.42 22.84 13.78 23.87 12.43C24.9 11.08 26.34 10.1 27.97 9.65L27.97 9.65Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M3.61 1.63C3.7 1.72 3.81 1.78 3.94 1.8C4.06 1.82 4.19 1.8 4.3 1.75C5.33 1.25 6.48 1.08 7.61 1.27C8.73 1.46 9.77 1.99 10.58 2.8C10.69 2.91 10.84 2.97 11 2.98C11.16 2.98 11.31 2.92 11.43 2.82C11.49 2.76 11.53 2.69 11.57 2.62C11.6 2.55 11.62 2.47 11.62 2.39C11.62 2.31 11.6 2.23 11.57 2.16C11.54 2.08 11.5 2.01 11.44 1.96C10.45 0.97 9.18 0.32 7.81 0.09C6.43 -0.14 5.02 0.06 3.77 0.67C3.68 0.71 3.61 0.77 3.55 0.85C3.49 0.93 3.46 1.02 3.44 1.11C3.42 1.2 3.43 1.3 3.46 1.39C3.49 1.48 3.54 1.56 3.61 1.63Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M3.61 1.63C3.7 1.72 3.81 1.78 3.94 1.8C4.06 1.82 4.19 1.8 4.3 1.75C5.33 1.25 6.48 1.08 7.61 1.27C8.73 1.46 9.77 1.99 10.58 2.8C10.69 2.91 10.84 2.97 11 2.98C11.16 2.98 11.31 2.92 11.43 2.82C11.49 2.76 11.53 2.69 11.57 2.62C11.6 2.55 11.62 2.47 11.62 2.39C11.62 2.31 11.6 2.23 11.57 2.16C11.54 2.08 11.5 2.01 11.44 1.96C10.45 0.97 9.18 0.32 7.81 0.09C6.43 -0.14 5.02 0.06 3.77 0.67C3.68 0.71 3.61 0.77 3.55 0.85C3.49 0.93 3.46 1.02 3.44 1.11C3.42 1.2 3.43 1.3 3.46 1.39C3.49 1.48 3.54 1.56 3.61 1.63Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M0.67 3.76C0.06 5.01 -0.14 6.42 0.08 7.79C0.31 9.16 0.96 10.43 1.94 11.42C2.04 11.53 2.18 11.6 2.33 11.61C2.47 11.62 2.62 11.58 2.74 11.5C2.81 11.44 2.87 11.38 2.91 11.3C2.95 11.23 2.98 11.14 2.98 11.06C2.99 10.97 2.97 10.89 2.94 10.81C2.91 10.72 2.87 10.65 2.81 10.59C2 9.78 1.46 8.74 1.27 7.61C1.08 6.48 1.25 5.33 1.75 4.3C1.8 4.18 1.82 4.06 1.8 3.93C1.78 3.81 1.72 3.69 1.63 3.6C1.57 3.54 1.48 3.49 1.39 3.46C1.3 3.43 1.21 3.42 1.11 3.43C1.02 3.45 0.93 3.49 0.85 3.54C0.77 3.6 0.71 3.68 0.67 3.76Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M0.67 3.76C0.06 5.01 -0.14 6.42 0.08 7.79C0.31 9.16 0.96 10.43 1.94 11.42C2.04 11.53 2.18 11.6 2.33 11.61C2.47 11.62 2.62 11.58 2.74 11.5C2.81 11.44 2.87 11.38 2.91 11.3C2.95 11.23 2.98 11.14 2.98 11.06C2.99 10.97 2.97 10.89 2.94 10.81C2.91 10.72 2.87 10.65 2.81 10.59C2 9.78 1.46 8.74 1.27 7.61C1.08 6.48 1.25 5.33 1.75 4.3C1.8 4.18 1.82 4.06 1.8 3.93C1.78 3.81 1.72 3.69 1.63 3.6C1.57 3.54 1.48 3.49 1.39 3.46C1.3 3.43 1.21 3.42 1.11 3.43C1.02 3.45 0.93 3.49 0.85 3.54C0.77 3.6 0.71 3.68 0.67 3.76Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M29.94 32.5C28.91 32.99 27.76 33.16 26.63 32.97C25.51 32.78 24.47 32.25 23.66 31.44C23.55 31.33 23.4 31.27 23.24 31.26C23.08 31.26 22.93 31.32 22.81 31.42C22.75 31.48 22.71 31.54 22.68 31.62C22.64 31.69 22.63 31.77 22.63 31.85C22.62 31.93 22.64 32.01 22.67 32.09C22.7 32.16 22.74 32.23 22.8 32.28C23.79 33.27 25.06 33.92 26.43 34.15C27.81 34.38 29.22 34.18 30.48 33.57C30.56 33.53 30.64 33.47 30.69 33.39C30.75 33.31 30.79 33.23 30.8 33.13C30.82 33.04 30.81 32.94 30.78 32.85C30.75 32.76 30.7 32.68 30.63 32.61C30.54 32.52 30.43 32.46 30.31 32.44C30.18 32.42 30.05 32.44 29.94 32.5Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M29.94 32.5C28.91 32.99 27.76 33.16 26.63 32.97C25.51 32.78 24.47 32.25 23.66 31.44C23.55 31.33 23.4 31.27 23.24 31.26C23.08 31.26 22.93 31.32 22.81 31.42C22.75 31.48 22.71 31.54 22.68 31.62C22.64 31.69 22.63 31.77 22.63 31.85C22.62 31.93 22.64 32.01 22.67 32.09C22.7 32.16 22.74 32.23 22.8 32.28C23.79 33.27 25.06 33.92 26.43 34.15C27.81 34.38 29.22 34.18 30.48 33.57C30.56 33.53 30.64 33.47 30.69 33.39C30.75 33.31 30.79 33.23 30.8 33.13C30.82 33.04 30.81 32.94 30.78 32.85C30.75 32.76 30.7 32.68 30.63 32.61C30.54 32.52 30.43 32.46 30.31 32.44C30.18 32.42 30.05 32.44 29.94 32.5Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M31.42 22.81C31.32 22.93 31.26 23.08 31.26 23.24C31.27 23.4 31.33 23.55 31.44 23.66C32.25 24.47 32.78 25.51 32.97 26.63C33.16 27.76 32.99 28.92 32.49 29.95C32.44 30.06 32.42 30.19 32.44 30.31C32.46 30.43 32.52 30.55 32.61 30.64C32.67 30.7 32.76 30.75 32.85 30.78C32.94 30.81 33.03 30.82 33.13 30.81C33.22 30.79 33.31 30.75 33.39 30.7C33.47 30.64 33.53 30.57 33.57 30.48C34.18 29.23 34.38 27.81 34.15 26.44C33.92 25.06 33.27 23.79 32.28 22.8C32.23 22.74 32.16 22.7 32.09 22.67C32.01 22.64 31.93 22.62 31.85 22.62C31.77 22.63 31.69 22.64 31.62 22.67C31.54 22.71 31.48 22.75 31.42 22.81Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M31.42 22.81C31.32 22.93 31.26 23.08 31.26 23.24C31.27 23.4 31.33 23.55 31.44 23.66C32.25 24.47 32.78 25.51 32.97 26.63C33.16 27.76 32.99 28.92 32.49 29.95C32.44 30.06 32.42 30.19 32.44 30.31C32.46 30.43 32.52 30.55 32.61 30.64C32.67 30.7 32.76 30.75 32.85 30.78C32.94 30.81 33.03 30.82 33.13 30.81C33.22 30.79 33.31 30.75 33.39 30.7C33.47 30.64 33.53 30.57 33.57 30.48C34.18 29.23 34.38 27.81 34.15 26.44C33.92 25.06 33.27 23.79 32.28 22.8C32.23 22.74 32.16 22.7 32.09 22.67C32.01 22.64 31.93 22.62 31.85 22.62C31.77 22.63 31.69 22.64 31.62 22.67C31.54 22.71 31.48 22.75 31.42 22.81Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M32.49 4.3C32.99 5.32 33.16 6.48 32.97 7.61C32.78 8.73 32.25 9.77 31.44 10.58C31.33 10.69 31.27 10.84 31.26 11C31.26 11.16 31.32 11.31 31.42 11.43C31.48 11.49 31.54 11.53 31.62 11.57C31.69 11.6 31.77 11.62 31.85 11.62C31.93 11.62 32.01 11.6 32.09 11.57C32.16 11.54 32.23 11.5 32.28 11.44C33.27 10.45 33.92 9.18 34.15 7.81C34.38 6.43 34.18 5.02 33.57 3.76C33.53 3.68 33.47 3.6 33.39 3.55C33.31 3.49 33.22 3.45 33.13 3.44C33.04 3.42 32.94 3.43 32.85 3.46C32.76 3.49 32.68 3.54 32.61 3.61C32.52 3.7 32.46 3.81 32.44 3.93C32.42 4.06 32.44 4.18 32.49 4.3Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M32.49 4.3C32.99 5.32 33.16 6.48 32.97 7.61C32.78 8.73 32.25 9.77 31.44 10.58C31.33 10.69 31.27 10.84 31.26 11C31.26 11.16 31.32 11.31 31.42 11.43C31.48 11.49 31.54 11.53 31.62 11.57C31.69 11.6 31.77 11.62 31.85 11.62C31.93 11.62 32.01 11.6 32.09 11.57C32.16 11.54 32.23 11.5 32.28 11.44C33.27 10.45 33.92 9.18 34.15 7.81C34.38 6.43 34.18 5.02 33.57 3.76C33.53 3.68 33.47 3.6 33.39 3.55C33.31 3.49 33.22 3.45 33.13 3.44C33.04 3.42 32.94 3.43 32.85 3.46C32.76 3.49 32.68 3.54 32.61 3.61C32.52 3.7 32.46 3.81 32.44 3.93C32.42 4.06 32.44 4.18 32.49 4.3Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M23.66 2.8C24.47 1.99 25.51 1.46 26.63 1.27C27.76 1.08 28.92 1.25 29.94 1.75C30.06 1.8 30.18 1.82 30.31 1.8C30.43 1.78 30.55 1.72 30.63 1.63C30.7 1.57 30.75 1.48 30.78 1.39C30.81 1.3 30.82 1.21 30.8 1.11C30.79 1.02 30.75 0.93 30.69 0.85C30.64 0.77 30.56 0.71 30.48 0.67C29.22 0.06 27.81 -0.14 26.43 0.09C25.06 0.32 23.79 0.97 22.8 1.96C22.74 2.01 22.7 2.08 22.67 2.16C22.64 2.23 22.62 2.31 22.62 2.39C22.63 2.47 22.64 2.55 22.68 2.62C22.71 2.7 22.75 2.76 22.81 2.82C22.93 2.92 23.08 2.98 23.24 2.98C23.4 2.97 23.55 2.91 23.66 2.8Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M23.66 2.8C24.47 1.99 25.51 1.46 26.63 1.27C27.76 1.08 28.92 1.25 29.94 1.75C30.06 1.8 30.18 1.82 30.31 1.8C30.43 1.78 30.55 1.72 30.63 1.63C30.7 1.57 30.75 1.48 30.78 1.39C30.81 1.3 30.82 1.21 30.8 1.11C30.79 1.02 30.75 0.93 30.69 0.85C30.64 0.77 30.56 0.71 30.48 0.67C29.22 0.06 27.81 -0.14 26.43 0.09C25.06 0.32 23.79 0.97 22.8 1.96C22.74 2.01 22.7 2.08 22.67 2.16C22.64 2.23 22.62 2.31 22.62 2.39C22.63 2.47 22.64 2.55 22.68 2.62C22.71 2.7 22.75 2.76 22.81 2.82C22.93 2.92 23.08 2.98 23.24 2.98C23.4 2.97 23.55 2.91 23.66 2.8Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M10.58 31.44C9.77 32.25 8.73 32.78 7.61 32.97C6.48 33.16 5.32 32.99 4.3 32.49C4.18 32.44 4.06 32.42 3.93 32.44C3.81 32.46 3.7 32.52 3.61 32.61C3.54 32.68 3.49 32.76 3.46 32.85C3.43 32.94 3.42 33.04 3.44 33.13C3.45 33.22 3.49 33.31 3.55 33.39C3.6 33.47 3.68 33.53 3.76 33.57C5.02 34.18 6.43 34.38 7.81 34.15C9.18 33.92 10.45 33.27 11.44 32.28C11.5 32.23 11.54 32.16 11.57 32.09C11.6 32.01 11.62 31.93 11.62 31.85C11.62 31.77 11.6 31.69 11.57 31.62C11.53 31.54 11.49 31.48 11.43 31.42C11.31 31.32 11.16 31.26 11 31.26C10.84 31.27 10.69 31.33 10.58 31.44Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M10.58 31.44C9.77 32.25 8.73 32.78 7.61 32.97C6.48 33.16 5.32 32.99 4.3 32.49C4.18 32.44 4.06 32.42 3.93 32.44C3.81 32.46 3.7 32.52 3.61 32.61C3.54 32.68 3.49 32.76 3.46 32.85C3.43 32.94 3.42 33.04 3.44 33.13C3.45 33.22 3.49 33.31 3.55 33.39C3.6 33.47 3.68 33.53 3.76 33.57C5.02 34.18 6.43 34.38 7.81 34.15C9.18 33.92 10.45 33.27 11.44 32.28C11.5 32.23 11.54 32.16 11.57 32.09C11.6 32.01 11.62 31.93 11.62 31.85C11.62 31.77 11.6 31.69 11.57 31.62C11.53 31.54 11.49 31.48 11.43 31.42C11.31 31.32 11.16 31.26 11 31.26C10.84 31.27 10.69 31.33 10.58 31.44Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M1.75 29.94C1.25 28.92 1.08 27.76 1.27 26.63C1.46 25.51 1.99 24.47 2.8 23.66C2.91 23.55 2.97 23.4 2.98 23.24C2.98 23.08 2.92 22.93 2.82 22.81C2.76 22.75 2.7 22.71 2.62 22.67C2.55 22.64 2.47 22.63 2.39 22.62C2.31 22.62 2.23 22.64 2.16 22.67C2.08 22.7 2.01 22.74 1.96 22.8C0.97 23.79 0.32 25.06 0.09 26.43C-0.14 27.81 0.06 29.22 0.67 30.48C0.71 30.56 0.77 30.64 0.85 30.69C0.93 30.75 1.02 30.79 1.11 30.8C1.21 30.82 1.3 30.81 1.39 30.78C1.48 30.75 1.57 30.7 1.63 30.63C1.72 30.55 1.78 30.43 1.8 30.31C1.82 30.18 1.8 30.06 1.75 29.94Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+					<path id="Vector"
+						d="M1.75 29.94C1.25 28.92 1.08 27.76 1.27 26.63C1.46 25.51 1.99 24.47 2.8 23.66C2.91 23.55 2.97 23.4 2.98 23.24C2.98 23.08 2.92 22.93 2.82 22.81C2.76 22.75 2.7 22.71 2.62 22.67C2.55 22.64 2.47 22.63 2.39 22.62C2.31 22.62 2.23 22.64 2.16 22.67C2.08 22.7 2.01 22.74 1.96 22.8C0.97 23.79 0.32 25.06 0.09 26.43C-0.14 27.81 0.06 29.22 0.67 30.48C0.71 30.56 0.77 30.64 0.85 30.69C0.93 30.75 1.02 30.79 1.11 30.8C1.21 30.82 1.3 30.81 1.39 30.78C1.48 30.75 1.57 30.7 1.63 30.63C1.72 30.55 1.78 30.43 1.8 30.31C1.82 30.18 1.8 30.06 1.75 29.94Z"
+						fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+				</svg>
+				<h1 class="header__logo__title">Zone.</h1>
+			</div>
+
+			<ul class="menu">
+				<li><a class="menuItem" href="#home">Home</a></li>
+				<li><a class="menuItem" href="#project">About Us</a></li>
+				<li><a class="menuItem" href="#services">Service</a></li>
+				<li><a class="menuItem" href="#">Pricing</a></li>
+				<li><a class="menuItem" href="#team">Blog</a></li>
+				<li><a class="menuItem menuBtn" href="#gallery">Contacts Us</a></li>
+			</ul>
+			<button class="hamburger">
+
+				<i class="menuIcon material-icons"><span class="material-symbols-outlined">
+						menu
+					</span></i>
+
+				<i class="closeIcon material-icons"><span class="material-symbols-outlined">
+						close
+					</span></i>
+			</button>
+
+
+
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="welcome" id="home">
+			<div class="welcome__info slide-in-top">
+				<div class="welcome__title title">Virtual Reality Business Solutions</div>
+				<div class="welcome__desc desc">We have over 15 year exprience in business consultting arena. We have
+					over 15
+					year exprience in business consultting arena and artficial intelligence.</div>
+				<div class="welcome__nav">
+					<a href="#footer" class="btn welcome__join heartbeat">Join Us</a>
+					<a href="/" class="btn welcome__watch">
+						<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M18 3C26.2845 3 33 9.7155 33 18C33 26.2845 26.2845 33 18 33C9.7155 33 3 26.2845 3 18C3 9.7155 9.7155 3 18 3ZM18 6C14.8174 6 11.7652 7.26428 9.51472 9.51472C7.26428 11.7652 6 14.8174 6 18C6 21.1826 7.26428 24.2348 9.51472 26.4853C11.7652 28.7357 14.8174 30 18 30C21.1826 30 24.2348 28.7357 26.4853 26.4853C28.7357 24.2348 30 21.1826 30 18C30 14.8174 28.7357 11.7652 26.4853 9.51472C24.2348 7.26428 21.1826 6 18 6ZM15.756 10.704L24.756 16.704C24.9681 16.8275 25.1467 17.0012 25.276 17.2099C25.4053 17.4185 25.4815 17.6557 25.4978 17.9007C25.5141 18.1456 25.47 18.3908 25.3694 18.6147C25.2689 18.8386 25.1149 19.0345 24.921 19.185L15.756 25.296C15.528 25.429 15.269 25.4995 15.0051 25.5004C14.7412 25.5013 14.4817 25.4326 14.2528 25.3011C14.024 25.1696 13.8338 24.9801 13.7017 24.7517C13.5695 24.5232 13.4999 24.2639 13.5 24V12C13.4999 11.7361 13.5695 11.4768 13.7017 11.2483C13.8338 11.0199 14.024 10.8304 14.2528 10.6989C14.4817 10.5674 14.7412 10.4987 15.0051 10.4996C15.269 10.5005 15.528 10.571 15.756 10.704Z"
+								fill="white" />
+						</svg>
+						<span>Watch video</span>
+					</a>
+				</div>
+			</div>
+			<div class="welcome__img slide-in-top">
+				<img src="img/welcome.png" alt="Welcome">
+			</div>
+		</section>
+		<section class="services slide-in-top" id="services">
+			<div class="services__info">
+				<h1 class="services__title title">Our Services</h1>
+				<p class="services__desc desc">We turn information into actionable insights We work to understand your
+					issues
+					and are driven to ask better questions in the pursuit of making work.</p>
+			</div>
+			<div class="services__items">
+
+				<div class="services__item">
+					<div class="services__item__img color-1"><img src="./img/services-icons/icon1.svg" alt="icon"></div>
+					<h1 class="services__item__title">Order Management</h1>
+					<p class="services__item__desc desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit.
+						Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a class="services__item__a" href="#">Learn more <svg width="24" height="24" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.121 6.29303C12.9335 6.48056 12.8282 6.73487 12.8282 7.00003C12.8282 7.26519 12.9335 7.5195 13.121 7.70703L16.413 11L6 11.007C5.73478 11.007 5.48043 11.1124 5.29289 11.2999C5.10536 11.4875 5 11.7418 5 12.007C5 12.2722 5.10536 12.5266 5.29289 12.7141C5.48043 12.9017 5.73478 13.007 6 13.007L16.414 13L13.121 16.293C13.0255 16.3853 12.9493 16.4956 12.8969 16.6176C12.8445 16.7396 12.8169 16.8709 12.8157 17.0036C12.8146 17.1364 12.8399 17.2681 12.8902 17.391C12.9405 17.5139 13.0147 17.6255 13.1086 17.7194C13.2025 17.8133 13.3141 17.8876 13.437 17.9379C13.5599 17.9881 13.6916 18.0134 13.8244 18.0123C13.9572 18.0111 14.0884 17.9835 14.2104 17.9311C14.3324 17.8787 14.4428 17.8025 14.535 17.707L18.121 14.122C18.3996 13.8434 18.6207 13.5127 18.7715 13.1487C18.9222 12.7847 18.9999 12.3945 18.9999 12.0005C18.9999 11.6065 18.9222 11.2164 18.7715 10.8524C18.6207 10.4884 18.3996 10.1576 18.121 9.87903L14.535 6.29303C14.3475 6.10556 14.0932 6.00024 13.828 6.00024C13.5628 6.00024 13.3085 6.10556 13.121 6.29303Z"
+								fill="currentColor" />
+						</svg>
+					</a>
+				</div>
+				<div class="services__item">
+					<div class="services__item__img color-2"><img src="./img/services-icons/icon2.svg" alt="icon"></div>
+					<h1 class="services__item__title">Social Assistant</h1>
+					<p class="services__item__desc desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit.
+						Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a class="services__item__a" href="#">Learn more <svg width="24" height="24" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.121 6.29303C12.9335 6.48056 12.8282 6.73487 12.8282 7.00003C12.8282 7.26519 12.9335 7.5195 13.121 7.70703L16.413 11L6 11.007C5.73478 11.007 5.48043 11.1124 5.29289 11.2999C5.10536 11.4875 5 11.7418 5 12.007C5 12.2722 5.10536 12.5266 5.29289 12.7141C5.48043 12.9017 5.73478 13.007 6 13.007L16.414 13L13.121 16.293C13.0255 16.3853 12.9493 16.4956 12.8969 16.6176C12.8445 16.7396 12.8169 16.8709 12.8157 17.0036C12.8146 17.1364 12.8399 17.2681 12.8902 17.391C12.9405 17.5139 13.0147 17.6255 13.1086 17.7194C13.2025 17.8133 13.3141 17.8876 13.437 17.9379C13.5599 17.9881 13.6916 18.0134 13.8244 18.0123C13.9572 18.0111 14.0884 17.9835 14.2104 17.9311C14.3324 17.8787 14.4428 17.8025 14.535 17.707L18.121 14.122C18.3996 13.8434 18.6207 13.5127 18.7715 13.1487C18.9222 12.7847 18.9999 12.3945 18.9999 12.0005C18.9999 11.6065 18.9222 11.2164 18.7715 10.8524C18.6207 10.4884 18.3996 10.1576 18.121 9.87903L14.535 6.29303C14.3475 6.10556 14.0932 6.00024 13.828 6.00024C13.5628 6.00024 13.3085 6.10556 13.121 6.29303Z"
+								fill="currentColor" />
+						</svg>
+					</a>
+				</div>
+				<div class="services__item">
+					<div class="services__item__img color-3"><img src="./img/services-icons/icon3.svg" alt="icon"></div>
+					<h1 class="services__item__title">Crypto Platform</h1>
+					<p class="services__item__desc desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit.
+						Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a class="services__item__a" href="#">Learn more <svg width="24" height="24" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.121 6.29303C12.9335 6.48056 12.8282 6.73487 12.8282 7.00003C12.8282 7.26519 12.9335 7.5195 13.121 7.70703L16.413 11L6 11.007C5.73478 11.007 5.48043 11.1124 5.29289 11.2999C5.10536 11.4875 5 11.7418 5 12.007C5 12.2722 5.10536 12.5266 5.29289 12.7141C5.48043 12.9017 5.73478 13.007 6 13.007L16.414 13L13.121 16.293C13.0255 16.3853 12.9493 16.4956 12.8969 16.6176C12.8445 16.7396 12.8169 16.8709 12.8157 17.0036C12.8146 17.1364 12.8399 17.2681 12.8902 17.391C12.9405 17.5139 13.0147 17.6255 13.1086 17.7194C13.2025 17.8133 13.3141 17.8876 13.437 17.9379C13.5599 17.9881 13.6916 18.0134 13.8244 18.0123C13.9572 18.0111 14.0884 17.9835 14.2104 17.9311C14.3324 17.8787 14.4428 17.8025 14.535 17.707L18.121 14.122C18.3996 13.8434 18.6207 13.5127 18.7715 13.1487C18.9222 12.7847 18.9999 12.3945 18.9999 12.0005C18.9999 11.6065 18.9222 11.2164 18.7715 10.8524C18.6207 10.4884 18.3996 10.1576 18.121 9.87903L14.535 6.29303C14.3475 6.10556 14.0932 6.00024 13.828 6.00024C13.5628 6.00024 13.3085 6.10556 13.121 6.29303Z"
+								fill="currentColor" />
+						</svg>
+					</a>
+				</div>
+				<div class="services__item">
+					<div class="services__item__img color-4"><img src="./img/services-icons/icon4.svg" alt="icon"></div>
+					<h1 class="services__item__title">Smart Trading Modules</h1>
+					<p class="services__item__desc desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit.
+						Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a class="services__item__a" href="#">Learn more <svg width="24" height="24" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.121 6.29303C12.9335 6.48056 12.8282 6.73487 12.8282 7.00003C12.8282 7.26519 12.9335 7.5195 13.121 7.70703L16.413 11L6 11.007C5.73478 11.007 5.48043 11.1124 5.29289 11.2999C5.10536 11.4875 5 11.7418 5 12.007C5 12.2722 5.10536 12.5266 5.29289 12.7141C5.48043 12.9017 5.73478 13.007 6 13.007L16.414 13L13.121 16.293C13.0255 16.3853 12.9493 16.4956 12.8969 16.6176C12.8445 16.7396 12.8169 16.8709 12.8157 17.0036C12.8146 17.1364 12.8399 17.2681 12.8902 17.391C12.9405 17.5139 13.0147 17.6255 13.1086 17.7194C13.2025 17.8133 13.3141 17.8876 13.437 17.9379C13.5599 17.9881 13.6916 18.0134 13.8244 18.0123C13.9572 18.0111 14.0884 17.9835 14.2104 17.9311C14.3324 17.8787 14.4428 17.8025 14.535 17.707L18.121 14.122C18.3996 13.8434 18.6207 13.5127 18.7715 13.1487C18.9222 12.7847 18.9999 12.3945 18.9999 12.0005C18.9999 11.6065 18.9222 11.2164 18.7715 10.8524C18.6207 10.4884 18.3996 10.1576 18.121 9.87903L14.535 6.29303C14.3475 6.10556 14.0932 6.00024 13.828 6.00024C13.5628 6.00024 13.3085 6.10556 13.121 6.29303Z"
+								fill="currentColor" />
+						</svg>
+					</a>
+				</div>
+				<div class="services__item">
+					<div class="services__item__img color-5"><img src="./img/services-icons/icon5.svg" alt="icon"></div>
+					<h1 class="services__item__title">Analyzer of the News</h1>
+					<p class="services__item__desc desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit.
+						Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a class="services__item__a" href="#">Learn more <svg width="24" height="24" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.121 6.29303C12.9335 6.48056 12.8282 6.73487 12.8282 7.00003C12.8282 7.26519 12.9335 7.5195 13.121 7.70703L16.413 11L6 11.007C5.73478 11.007 5.48043 11.1124 5.29289 11.2999C5.10536 11.4875 5 11.7418 5 12.007C5 12.2722 5.10536 12.5266 5.29289 12.7141C5.48043 12.9017 5.73478 13.007 6 13.007L16.414 13L13.121 16.293C13.0255 16.3853 12.9493 16.4956 12.8969 16.6176C12.8445 16.7396 12.8169 16.8709 12.8157 17.0036C12.8146 17.1364 12.8399 17.2681 12.8902 17.391C12.9405 17.5139 13.0147 17.6255 13.1086 17.7194C13.2025 17.8133 13.3141 17.8876 13.437 17.9379C13.5599 17.9881 13.6916 18.0134 13.8244 18.0123C13.9572 18.0111 14.0884 17.9835 14.2104 17.9311C14.3324 17.8787 14.4428 17.8025 14.535 17.707L18.121 14.122C18.3996 13.8434 18.6207 13.5127 18.7715 13.1487C18.9222 12.7847 18.9999 12.3945 18.9999 12.0005C18.9999 11.6065 18.9222 11.2164 18.7715 10.8524C18.6207 10.4884 18.3996 10.1576 18.121 9.87903L14.535 6.29303C14.3475 6.10556 14.0932 6.00024 13.828 6.00024C13.5628 6.00024 13.3085 6.10556 13.121 6.29303Z"
+								fill="currentColor" />
+						</svg>
+					</a>
+				</div>
+				<div class="services__item">
+					<div class="services__item__img color-6"><img src="./img/services-icons/icon6.svg" alt="icon"></div>
+					<h1 class="services__item__title">Module of Price Notification</h1>
+					<p class="services__item__desc desc">Lorem ipsum dolor sit amet, consectetur the adipiscing elit.
+						Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+					<a class="services__item__a" href="#">Learn more <svg width="24" height="24" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.121 6.29303C12.9335 6.48056 12.8282 6.73487 12.8282 7.00003C12.8282 7.26519 12.9335 7.5195 13.121 7.70703L16.413 11L6 11.007C5.73478 11.007 5.48043 11.1124 5.29289 11.2999C5.10536 11.4875 5 11.7418 5 12.007C5 12.2722 5.10536 12.5266 5.29289 12.7141C5.48043 12.9017 5.73478 13.007 6 13.007L16.414 13L13.121 16.293C13.0255 16.3853 12.9493 16.4956 12.8969 16.6176C12.8445 16.7396 12.8169 16.8709 12.8157 17.0036C12.8146 17.1364 12.8399 17.2681 12.8902 17.391C12.9405 17.5139 13.0147 17.6255 13.1086 17.7194C13.2025 17.8133 13.3141 17.8876 13.437 17.9379C13.5599 17.9881 13.6916 18.0134 13.8244 18.0123C13.9572 18.0111 14.0884 17.9835 14.2104 17.9311C14.3324 17.8787 14.4428 17.8025 14.535 17.707L18.121 14.122C18.3996 13.8434 18.6207 13.5127 18.7715 13.1487C18.9222 12.7847 18.9999 12.3945 18.9999 12.0005C18.9999 11.6065 18.9222 11.2164 18.7715 10.8524C18.6207 10.4884 18.3996 10.1576 18.121 9.87903L14.535 6.29303C14.3475 6.10556 14.0932 6.00024 13.828 6.00024C13.5628 6.00024 13.3085 6.10556 13.121 6.29303Z"
+								fill="currentColor" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="project" id="project">
+			<div class="project-item slide-in-top">
+				<div class="project-item__img">
+					<img src="img/project1.png" alt="project1">
+				</div>
+				<div class="project-item__info">
+					<div class="project-item__title">We complete every projects
+						extra care as customer need</div>
+					<div class="project-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+						dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nuncoe
+						scelerisque in. orem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae
+						facere, natus reprehenderit eaque eum, autem ipsam. Magfini, error. Tempora odit laborum iure
+						inventore possimus laboriosam qui nam. </div>
+					<a href="/" class="btn project-item__btn">Read more</a>
+				</div>
+			</div>
+			<div class="project-item slide-in-top">
+				<div class="project-item__img">
+					<img src="img/project2.png" alt="project2">
+				</div>
+				<div class="project-item__info">
+					<div class="project-item__title">We complete every projects
+						extra care as customer need</div>
+					<div class="project-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+						dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nuncoe
+						scelerisque in. orem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae
+						facere, natus reprehenderit eaque eum, autem ipsam. Magfini, error. Tempora odit laborum iure
+						inventore possimus laboriosam qui nam. </div>
+					<a href="/" class="btn project-item__btn">Read more</a>
+				</div>
+			</div>
+		</section>
+		<section class="team" id="team">
+			<div class="team__info">
+				<h1 class="team__title title">Met Our Team</h1>
+				<p class="team__desc desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+					accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+				</p>
+			</div>
+			<div class="team__teammates">
+				<div class="team__teammate">
+					<div class="team__teammate__img"><img src="./img/team/person1.svg" alt=""></div>
+					<h1 class="team__teammate__name">Sunny Khan</h1>
+					<p class="team__teammate__role">EXECUTIVE OFFICER</p>
+					<div class="team__teammate__get-in-touch">
+						<img src="./img/social/skype.svg" alt="skype">
+						<img src="./img/social/linkedin.svg" alt="linkedin">
+						<img src="./img/social/twitter.svg" alt="twitter">
+						<img src="./img/social/facebook.svg" alt="facebook">
+					</div>
+				</div>
+				<div class="team__teammate">
+					<div class="team__teammate__img"><img src="./img/team/person2.svg" alt=""></div>
+					<h1 class="team__teammate__name">Alina Jesia</h1>
+					<p class="team__teammate__role">UX/UI DESIGNER</p>
+					<div class="team__teammate__get-in-touch">
+						<img src="./img/social/skype.svg" alt="skype">
+						<img src="./img/social/linkedin.svg" alt="linkedin">
+						<img src="./img/social/twitter.svg" alt="twitter">
+						<img src="./img/social/facebook.svg" alt="facebook">
+					</div>
+				</div>
+				<div class="team__teammate">
+					<div class="team__teammate__img"><img src="./img/team/person3.svg" alt=""></div>
+					<h1 class="team__teammate__name">Alex Sohag</h1>
+					<p class="team__teammate__role">BUSINESS DEVELOPMENT</p>
+					<div class="team__teammate__get-in-touch">
+						<img src="./img/social/skype.svg" alt="skype">
+						<img src="./img/social/linkedin.svg" alt="linkedin">
+						<img src="./img/social/twitter.svg" alt="twitter">
+						<img src="./img/social/facebook.svg" alt="facebook">
+					</div>
+				</div>
+				<div class="team__teammate">
+					<div class="team__teammate__img"><img src="./img/team/person4.svg" alt=""></div>
+					<h1 class="team__teammate__name">Afroza Mou</h1>
+					<p class="team__teammate__role">HEAD OF MARKETING</p>
+					<div class="team__teammate__get-in-touch">
+						<img src="./img/social/skype.svg" alt="skype">
+						<img src="./img/social/linkedin.svg" alt="linkedin">
+						<img src="./img/social/twitter.svg" alt="twitter">
+						<img src="./img/social/facebook.svg" alt="facebook">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="gallery" class="join">
+			<h1 class="join__title">Join Our Newsletter</h1>
+			<p class="join__desc">We recommended you to subscribe to our newspaper,drop your email below to get daily
+				update about us</p>
+			<form class="join-form">
+				<input class="join-form__input" type="email" placeholder="Enter your email adress" />
+				<button type="submit" class="join-form__btn">
+					<span class="join-form__btn-text"><svg width="14.000000" height="14.000000" viewBox="0 0 14 14"
+							fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<defs />
+							<path id="Vector"
+								d="M7.99 13.66C7.74 13.66 7.51 13.52 7.4 13.29L5.42 9.34C5.31 9.12 5.33 8.86 5.47 8.66L8.66 4.33L4.33 7.52C4.13 7.66 3.87 7.68 3.65 7.57L-0.3 5.59C-0.54 5.47 -0.69 5.22 -0.67 4.96C-0.66 4.69 -0.49 4.46 -0.24 4.37L12.43 -0.3C12.67 -0.39 12.95 -0.33 13.13 -0.14C13.32 0.04 13.38 0.32 13.29 0.56L8.62 13.23C8.53 13.48 8.3 13.65 8.03 13.66C8.02 13.66 8.01 13.66 7.99 13.66Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+						</svg>
+						<div class="join__subscribe">Subscribe</div>
+					</span>
+
+				</button>
+			</form>
+		</section>
+		<section class="contact">
+			<div class="contact__container">
+				<div class="contact__row">
+					<div class="contact__logo">
+						<svg class="contact__logo__svg" width="35.000000" height="35.000000" viewBox="0 0 35 35"
+							fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<defs>
+								<linearGradient id="paint_linear_1_527_0" x1="12.635010" y1="-7.010573" x2="23.860878"
+									y2="44.628647" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+								<linearGradient id="paint_linear_1_528_0" x1="6.105958" y1="-1.296721" x2="9.664240"
+									y2="4.669323" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+								<linearGradient id="paint_linear_1_529_0" x1="0.974396" y1="-0.126441" x2="2.273496"
+									y2="16.242992" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+								<linearGradient id="paint_linear_1_530_0" x1="25.298660" y1="29.969917" x2="28.856882"
+									y2="35.936920" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+								<linearGradient id="paint_linear_1_531_0" x1="32.240047" y1="19.068146" x2="33.537361"
+									y2="35.447659" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+								<linearGradient id="paint_linear_1_532_0" x1="32.239998" y1="-0.125222" x2="33.537209"
+									y2="16.248714" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+								<linearGradient id="paint_linear_1_533_0" x1="25.299362" y1="-1.297238" x2="28.858925"
+									y2="4.670064" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+								<linearGradient id="paint_linear_1_534_0" x1="6.104044" y1="29.969574" x2="9.663598"
+									y2="35.937031" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+								<linearGradient id="paint_linear_1_535_0" x1="0.973001" y1="19.069839" x2="2.270223"
+									y2="35.443806" gradientUnits="userSpaceOnUse">
+									<stop stop-color="currentColor" />
+									<stop offset="1.000000" stop-color="currentColor" />
+								</linearGradient>
+							</defs>
+							<path id="Vector"
+								d="M27.97 9.65C28.56 9.49 29.08 9.15 29.45 8.66C29.82 8.18 30.03 7.59 30.03 6.98L30.03 6.97C30.03 6.24 29.74 5.54 29.22 5.02C28.7 4.5 28 4.21 27.27 4.21L27.26 4.21C26.65 4.21 26.06 4.42 25.58 4.79C25.09 5.16 24.75 5.68 24.59 6.27C24.14 7.9 23.16 9.35 21.81 10.37C20.46 11.4 18.82 11.96 17.12 11.96C15.42 11.96 13.78 11.4 12.43 10.37C11.08 9.35 10.1 7.9 9.65 6.27C9.49 5.68 9.15 5.16 8.66 4.79C8.18 4.42 7.59 4.21 6.98 4.21L6.97 4.21C6.24 4.21 5.54 4.5 5.02 5.02C4.5 5.54 4.21 6.24 4.21 6.97L4.21 6.98C4.21 7.59 4.42 8.18 4.79 8.66C5.16 9.15 5.68 9.49 6.27 9.65C7.9 10.1 9.35 11.08 10.37 12.43C11.4 13.78 11.96 15.42 11.96 17.12C11.96 18.82 11.4 20.46 10.37 21.81C9.35 23.16 7.9 24.14 6.27 24.59C5.68 24.75 5.16 25.09 4.79 25.58C4.42 26.06 4.21 26.65 4.21 27.26L4.21 27.27C4.21 28 4.5 28.7 5.02 29.22C5.54 29.74 6.24 30.03 6.97 30.03L6.98 30.03C7.59 30.03 8.18 29.82 8.66 29.45C9.15 29.08 9.49 28.56 9.65 27.97C10.1 26.34 11.08 24.89 12.43 23.87C13.78 22.84 15.42 22.28 17.12 22.28C18.82 22.28 20.46 22.84 21.81 23.87C23.16 24.89 24.14 26.34 24.59 27.97C24.75 28.56 25.09 29.08 25.58 29.45C26.06 29.82 26.65 30.03 27.26 30.03L27.27 30.03C28 30.03 28.7 29.74 29.22 29.22C29.74 28.7 30.03 28 30.03 27.27L30.03 27.26C30.03 26.65 29.82 26.06 29.45 25.58C29.08 25.09 28.56 24.75 27.97 24.59C26.34 24.14 24.9 23.16 23.87 21.81C22.84 20.46 22.28 18.82 22.28 17.12C22.28 15.42 22.84 13.78 23.87 12.43C24.9 11.08 26.34 10.1 27.97 9.65L27.97 9.65Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M27.97 9.65C28.56 9.49 29.08 9.15 29.45 8.66C29.82 8.18 30.03 7.59 30.03 6.98L30.03 6.97C30.03 6.24 29.74 5.54 29.22 5.02C28.7 4.5 28 4.21 27.27 4.21L27.26 4.21C26.65 4.21 26.06 4.42 25.58 4.79C25.09 5.16 24.75 5.68 24.59 6.27C24.14 7.9 23.16 9.35 21.81 10.37C20.46 11.4 18.82 11.96 17.12 11.96C15.42 11.96 13.78 11.4 12.43 10.37C11.08 9.35 10.1 7.9 9.65 6.27C9.49 5.68 9.15 5.16 8.66 4.79C8.18 4.42 7.59 4.21 6.98 4.21L6.97 4.21C6.24 4.21 5.54 4.5 5.02 5.02C4.5 5.54 4.21 6.24 4.21 6.97L4.21 6.98C4.21 7.59 4.42 8.18 4.79 8.66C5.16 9.15 5.68 9.49 6.27 9.65C7.9 10.1 9.35 11.08 10.37 12.43C11.4 13.78 11.96 15.42 11.96 17.12C11.96 18.82 11.4 20.46 10.37 21.81C9.35 23.16 7.9 24.14 6.27 24.59C5.68 24.75 5.16 25.09 4.79 25.58C4.42 26.06 4.21 26.65 4.21 27.26L4.21 27.27C4.21 28 4.5 28.7 5.02 29.22C5.54 29.74 6.24 30.03 6.97 30.03L6.98 30.03C7.59 30.03 8.18 29.82 8.66 29.45C9.15 29.08 9.49 28.56 9.65 27.97C10.1 26.34 11.08 24.89 12.43 23.87C13.78 22.84 15.42 22.28 17.12 22.28C18.82 22.28 20.46 22.84 21.81 23.87C23.16 24.89 24.14 26.34 24.59 27.97C24.75 28.56 25.09 29.08 25.58 29.45C26.06 29.82 26.65 30.03 27.26 30.03L27.27 30.03C28 30.03 28.7 29.74 29.22 29.22C29.74 28.7 30.03 28 30.03 27.27L30.03 27.26C30.03 26.65 29.82 26.06 29.45 25.58C29.08 25.09 28.56 24.75 27.97 24.59C26.34 24.14 24.9 23.16 23.87 21.81C22.84 20.46 22.28 18.82 22.28 17.12C22.28 15.42 22.84 13.78 23.87 12.43C24.9 11.08 26.34 10.1 27.97 9.65L27.97 9.65Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M3.61 1.63C3.7 1.72 3.81 1.78 3.94 1.8C4.06 1.82 4.19 1.8 4.3 1.75C5.33 1.25 6.48 1.08 7.61 1.27C8.73 1.46 9.77 1.99 10.58 2.8C10.69 2.91 10.84 2.97 11 2.98C11.16 2.98 11.31 2.92 11.43 2.82C11.49 2.76 11.53 2.69 11.57 2.62C11.6 2.55 11.62 2.47 11.62 2.39C11.62 2.31 11.6 2.23 11.57 2.16C11.54 2.08 11.5 2.01 11.44 1.96C10.45 0.97 9.18 0.32 7.81 0.09C6.43 -0.14 5.02 0.06 3.77 0.67C3.68 0.71 3.61 0.77 3.55 0.85C3.49 0.93 3.46 1.02 3.44 1.11C3.42 1.2 3.43 1.3 3.46 1.39C3.49 1.48 3.54 1.56 3.61 1.63Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M3.61 1.63C3.7 1.72 3.81 1.78 3.94 1.8C4.06 1.82 4.19 1.8 4.3 1.75C5.33 1.25 6.48 1.08 7.61 1.27C8.73 1.46 9.77 1.99 10.58 2.8C10.69 2.91 10.84 2.97 11 2.98C11.16 2.98 11.31 2.92 11.43 2.82C11.49 2.76 11.53 2.69 11.57 2.62C11.6 2.55 11.62 2.47 11.62 2.39C11.62 2.31 11.6 2.23 11.57 2.16C11.54 2.08 11.5 2.01 11.44 1.96C10.45 0.97 9.18 0.32 7.81 0.09C6.43 -0.14 5.02 0.06 3.77 0.67C3.68 0.71 3.61 0.77 3.55 0.85C3.49 0.93 3.46 1.02 3.44 1.11C3.42 1.2 3.43 1.3 3.46 1.39C3.49 1.48 3.54 1.56 3.61 1.63Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M0.67 3.76C0.06 5.01 -0.14 6.42 0.08 7.79C0.31 9.16 0.96 10.43 1.94 11.42C2.04 11.53 2.18 11.6 2.33 11.61C2.47 11.62 2.62 11.58 2.74 11.5C2.81 11.44 2.87 11.38 2.91 11.3C2.95 11.23 2.98 11.14 2.98 11.06C2.99 10.97 2.97 10.89 2.94 10.81C2.91 10.72 2.87 10.65 2.81 10.59C2 9.78 1.46 8.74 1.27 7.61C1.08 6.48 1.25 5.33 1.75 4.3C1.8 4.18 1.82 4.06 1.8 3.93C1.78 3.81 1.72 3.69 1.63 3.6C1.57 3.54 1.48 3.49 1.39 3.46C1.3 3.43 1.21 3.42 1.11 3.43C1.02 3.45 0.93 3.49 0.85 3.54C0.77 3.6 0.71 3.68 0.67 3.76Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M0.67 3.76C0.06 5.01 -0.14 6.42 0.08 7.79C0.31 9.16 0.96 10.43 1.94 11.42C2.04 11.53 2.18 11.6 2.33 11.61C2.47 11.62 2.62 11.58 2.74 11.5C2.81 11.44 2.87 11.38 2.91 11.3C2.95 11.23 2.98 11.14 2.98 11.06C2.99 10.97 2.97 10.89 2.94 10.81C2.91 10.72 2.87 10.65 2.81 10.59C2 9.78 1.46 8.74 1.27 7.61C1.08 6.48 1.25 5.33 1.75 4.3C1.8 4.18 1.82 4.06 1.8 3.93C1.78 3.81 1.72 3.69 1.63 3.6C1.57 3.54 1.48 3.49 1.39 3.46C1.3 3.43 1.21 3.42 1.11 3.43C1.02 3.45 0.93 3.49 0.85 3.54C0.77 3.6 0.71 3.68 0.67 3.76Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M29.94 32.5C28.91 32.99 27.76 33.16 26.63 32.97C25.51 32.78 24.47 32.25 23.66 31.44C23.55 31.33 23.4 31.27 23.24 31.26C23.08 31.26 22.93 31.32 22.81 31.42C22.75 31.48 22.71 31.54 22.68 31.62C22.64 31.69 22.63 31.77 22.63 31.85C22.62 31.93 22.64 32.01 22.67 32.09C22.7 32.16 22.74 32.23 22.8 32.28C23.79 33.27 25.06 33.92 26.43 34.15C27.81 34.38 29.22 34.18 30.48 33.57C30.56 33.53 30.64 33.47 30.69 33.39C30.75 33.31 30.79 33.23 30.8 33.13C30.82 33.04 30.81 32.94 30.78 32.85C30.75 32.76 30.7 32.68 30.63 32.61C30.54 32.52 30.43 32.46 30.31 32.44C30.18 32.42 30.05 32.44 29.94 32.5Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M29.94 32.5C28.91 32.99 27.76 33.16 26.63 32.97C25.51 32.78 24.47 32.25 23.66 31.44C23.55 31.33 23.4 31.27 23.24 31.26C23.08 31.26 22.93 31.32 22.81 31.42C22.75 31.48 22.71 31.54 22.68 31.62C22.64 31.69 22.63 31.77 22.63 31.85C22.62 31.93 22.64 32.01 22.67 32.09C22.7 32.16 22.74 32.23 22.8 32.28C23.79 33.27 25.06 33.92 26.43 34.15C27.81 34.38 29.22 34.18 30.48 33.57C30.56 33.53 30.64 33.47 30.69 33.39C30.75 33.31 30.79 33.23 30.8 33.13C30.82 33.04 30.81 32.94 30.78 32.85C30.75 32.76 30.7 32.68 30.63 32.61C30.54 32.52 30.43 32.46 30.31 32.44C30.18 32.42 30.05 32.44 29.94 32.5Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M31.42 22.81C31.32 22.93 31.26 23.08 31.26 23.24C31.27 23.4 31.33 23.55 31.44 23.66C32.25 24.47 32.78 25.51 32.97 26.63C33.16 27.76 32.99 28.92 32.49 29.95C32.44 30.06 32.42 30.19 32.44 30.31C32.46 30.43 32.52 30.55 32.61 30.64C32.67 30.7 32.76 30.75 32.85 30.78C32.94 30.81 33.03 30.82 33.13 30.81C33.22 30.79 33.31 30.75 33.39 30.7C33.47 30.64 33.53 30.57 33.57 30.48C34.18 29.23 34.38 27.81 34.15 26.44C33.92 25.06 33.27 23.79 32.28 22.8C32.23 22.74 32.16 22.7 32.09 22.67C32.01 22.64 31.93 22.62 31.85 22.62C31.77 22.63 31.69 22.64 31.62 22.67C31.54 22.71 31.48 22.75 31.42 22.81Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M31.42 22.81C31.32 22.93 31.26 23.08 31.26 23.24C31.27 23.4 31.33 23.55 31.44 23.66C32.25 24.47 32.78 25.51 32.97 26.63C33.16 27.76 32.99 28.92 32.49 29.95C32.44 30.06 32.42 30.19 32.44 30.31C32.46 30.43 32.52 30.55 32.61 30.64C32.67 30.7 32.76 30.75 32.85 30.78C32.94 30.81 33.03 30.82 33.13 30.81C33.22 30.79 33.31 30.75 33.39 30.7C33.47 30.64 33.53 30.57 33.57 30.48C34.18 29.23 34.38 27.81 34.15 26.44C33.92 25.06 33.27 23.79 32.28 22.8C32.23 22.74 32.16 22.7 32.09 22.67C32.01 22.64 31.93 22.62 31.85 22.62C31.77 22.63 31.69 22.64 31.62 22.67C31.54 22.71 31.48 22.75 31.42 22.81Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M32.49 4.3C32.99 5.32 33.16 6.48 32.97 7.61C32.78 8.73 32.25 9.77 31.44 10.58C31.33 10.69 31.27 10.84 31.26 11C31.26 11.16 31.32 11.31 31.42 11.43C31.48 11.49 31.54 11.53 31.62 11.57C31.69 11.6 31.77 11.62 31.85 11.62C31.93 11.62 32.01 11.6 32.09 11.57C32.16 11.54 32.23 11.5 32.28 11.44C33.27 10.45 33.92 9.18 34.15 7.81C34.38 6.43 34.18 5.02 33.57 3.76C33.53 3.68 33.47 3.6 33.39 3.55C33.31 3.49 33.22 3.45 33.13 3.44C33.04 3.42 32.94 3.43 32.85 3.46C32.76 3.49 32.68 3.54 32.61 3.61C32.52 3.7 32.46 3.81 32.44 3.93C32.42 4.06 32.44 4.18 32.49 4.3Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M32.49 4.3C32.99 5.32 33.16 6.48 32.97 7.61C32.78 8.73 32.25 9.77 31.44 10.58C31.33 10.69 31.27 10.84 31.26 11C31.26 11.16 31.32 11.31 31.42 11.43C31.48 11.49 31.54 11.53 31.62 11.57C31.69 11.6 31.77 11.62 31.85 11.62C31.93 11.62 32.01 11.6 32.09 11.57C32.16 11.54 32.23 11.5 32.28 11.44C33.27 10.45 33.92 9.18 34.15 7.81C34.38 6.43 34.18 5.02 33.57 3.76C33.53 3.68 33.47 3.6 33.39 3.55C33.31 3.49 33.22 3.45 33.13 3.44C33.04 3.42 32.94 3.43 32.85 3.46C32.76 3.49 32.68 3.54 32.61 3.61C32.52 3.7 32.46 3.81 32.44 3.93C32.42 4.06 32.44 4.18 32.49 4.3Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M23.66 2.8C24.47 1.99 25.51 1.46 26.63 1.27C27.76 1.08 28.92 1.25 29.94 1.75C30.06 1.8 30.18 1.82 30.31 1.8C30.43 1.78 30.55 1.72 30.63 1.63C30.7 1.57 30.75 1.48 30.78 1.39C30.81 1.3 30.82 1.21 30.8 1.11C30.79 1.02 30.75 0.93 30.69 0.85C30.64 0.77 30.56 0.71 30.48 0.67C29.22 0.06 27.81 -0.14 26.43 0.09C25.06 0.32 23.79 0.97 22.8 1.96C22.74 2.01 22.7 2.08 22.67 2.16C22.64 2.23 22.62 2.31 22.62 2.39C22.63 2.47 22.64 2.55 22.68 2.62C22.71 2.7 22.75 2.76 22.81 2.82C22.93 2.92 23.08 2.98 23.24 2.98C23.4 2.97 23.55 2.91 23.66 2.8Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M23.66 2.8C24.47 1.99 25.51 1.46 26.63 1.27C27.76 1.08 28.92 1.25 29.94 1.75C30.06 1.8 30.18 1.82 30.31 1.8C30.43 1.78 30.55 1.72 30.63 1.63C30.7 1.57 30.75 1.48 30.78 1.39C30.81 1.3 30.82 1.21 30.8 1.11C30.79 1.02 30.75 0.93 30.69 0.85C30.64 0.77 30.56 0.71 30.48 0.67C29.22 0.06 27.81 -0.14 26.43 0.09C25.06 0.32 23.79 0.97 22.8 1.96C22.74 2.01 22.7 2.08 22.67 2.16C22.64 2.23 22.62 2.31 22.62 2.39C22.63 2.47 22.64 2.55 22.68 2.62C22.71 2.7 22.75 2.76 22.81 2.82C22.93 2.92 23.08 2.98 23.24 2.98C23.4 2.97 23.55 2.91 23.66 2.8Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M10.58 31.44C9.77 32.25 8.73 32.78 7.61 32.97C6.48 33.16 5.32 32.99 4.3 32.49C4.18 32.44 4.06 32.42 3.93 32.44C3.81 32.46 3.7 32.52 3.61 32.61C3.54 32.68 3.49 32.76 3.46 32.85C3.43 32.94 3.42 33.04 3.44 33.13C3.45 33.22 3.49 33.31 3.55 33.39C3.6 33.47 3.68 33.53 3.76 33.57C5.02 34.18 6.43 34.38 7.81 34.15C9.18 33.92 10.45 33.27 11.44 32.28C11.5 32.23 11.54 32.16 11.57 32.09C11.6 32.01 11.62 31.93 11.62 31.85C11.62 31.77 11.6 31.69 11.57 31.62C11.53 31.54 11.49 31.48 11.43 31.42C11.31 31.32 11.16 31.26 11 31.26C10.84 31.27 10.69 31.33 10.58 31.44Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M10.58 31.44C9.77 32.25 8.73 32.78 7.61 32.97C6.48 33.16 5.32 32.99 4.3 32.49C4.18 32.44 4.06 32.42 3.93 32.44C3.81 32.46 3.7 32.52 3.61 32.61C3.54 32.68 3.49 32.76 3.46 32.85C3.43 32.94 3.42 33.04 3.44 33.13C3.45 33.22 3.49 33.31 3.55 33.39C3.6 33.47 3.68 33.53 3.76 33.57C5.02 34.18 6.43 34.38 7.81 34.15C9.18 33.92 10.45 33.27 11.44 32.28C11.5 32.23 11.54 32.16 11.57 32.09C11.6 32.01 11.62 31.93 11.62 31.85C11.62 31.77 11.6 31.69 11.57 31.62C11.53 31.54 11.49 31.48 11.43 31.42C11.31 31.32 11.16 31.26 11 31.26C10.84 31.27 10.69 31.33 10.58 31.44Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M1.75 29.94C1.25 28.92 1.08 27.76 1.27 26.63C1.46 25.51 1.99 24.47 2.8 23.66C2.91 23.55 2.97 23.4 2.98 23.24C2.98 23.08 2.92 22.93 2.82 22.81C2.76 22.75 2.7 22.71 2.62 22.67C2.55 22.64 2.47 22.63 2.39 22.62C2.31 22.62 2.23 22.64 2.16 22.67C2.08 22.7 2.01 22.74 1.96 22.8C0.97 23.79 0.32 25.06 0.09 26.43C-0.14 27.81 0.06 29.22 0.67 30.48C0.71 30.56 0.77 30.64 0.85 30.69C0.93 30.75 1.02 30.79 1.11 30.8C1.21 30.82 1.3 30.81 1.39 30.78C1.48 30.75 1.57 30.7 1.63 30.63C1.72 30.55 1.78 30.43 1.8 30.31C1.82 30.18 1.8 30.06 1.75 29.94Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+							<path id="Vector"
+								d="M1.75 29.94C1.25 28.92 1.08 27.76 1.27 26.63C1.46 25.51 1.99 24.47 2.8 23.66C2.91 23.55 2.97 23.4 2.98 23.24C2.98 23.08 2.92 22.93 2.82 22.81C2.76 22.75 2.7 22.71 2.62 22.67C2.55 22.64 2.47 22.63 2.39 22.62C2.31 22.62 2.23 22.64 2.16 22.67C2.08 22.7 2.01 22.74 1.96 22.8C0.97 23.79 0.32 25.06 0.09 26.43C-0.14 27.81 0.06 29.22 0.67 30.48C0.71 30.56 0.77 30.64 0.85 30.69C0.93 30.75 1.02 30.79 1.11 30.8C1.21 30.82 1.3 30.81 1.39 30.78C1.48 30.75 1.57 30.7 1.63 30.63C1.72 30.55 1.78 30.43 1.8 30.31C1.82 30.18 1.8 30.06 1.75 29.94Z"
+								fill="currentColor" fill-opacity="1.000000" fill-rule="nonzero" />
+						</svg>
+						<h1 class="contact__logo__title">Zone.</h1>
+					</div>
+					<ul class="contact__info">
+						<li><a class="contact__location" target="_blank" href="https://www.google.com/maps/d/viewer?mid=1Ud5DRnqhKifdeHQ0wjENsGgLp_0&hl=en_US&ll=23.26689609039422%2C89.98558050000001&z=10"><svg width="24" height="24" viewBox="0 0 24 24"
+									fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.5 10.5005C14.5 9.11924 13.3808 8 12.0005 8C10.6192 8 9.5 9.11924 9.5 10.5005C9.5 11.8808 10.6192 13 12.0005 13C13.3808 13 14.5 11.8808 14.5 10.5005Z"
+										stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M11.9995 21C10.801 21 4.5 15.8984 4.5 10.5633C4.5 6.38664 7.8571 3 11.9995 3C16.1419 3 19.5 6.38664 19.5 10.5633C19.5 15.8984 13.198 21 11.9995 21Z"
+										stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								Dhaka, Bangladesh
+							</a></li>
+						<li><a class="contact__phone" href="#"><svg width="24" height="24" viewBox="0 0 24 24"
+									fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.353 2.5C18.054 2.911 20.978 5.831 21.393 9.532" stroke="white"
+										stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M14.353 6.04297C16.124 6.38697 17.508 7.77197 17.853 9.54297"
+										stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M11.0315 12.4724C15.0205 16.4604 15.9254 11.8467 18.4653 14.3848C20.9138 16.8328 22.3222 17.3232 19.2188 20.4247C18.8302 20.737 16.3613 24.4943 7.68447 15.8197C-0.993406 7.144 2.76157 4.67244 3.07394 4.28395C6.18377 1.17385 6.66682 2.58938 9.11539 5.03733C11.6541 7.5765 7.04254 8.48441 11.0315 12.4724Z"
+										stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								0943833399</a></li>
+						<li><a class="contact__email" href="#"><svg width="24" height="24" viewBox="0 0 24 24"
+									fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M17.9026 8.85107L13.4593 12.4641C12.6198 13.1301 11.4387 13.1301 10.5992 12.4641L6.11841 8.85107"
+										stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M16.9089 21C19.9502 21.0084 22 18.5095 22 15.4384V8.57001C22 5.49883 19.9502 3 16.9089 3H7.09114C4.04979 3 2 5.49883 2 8.57001V15.4384C2 18.5095 4.04979 21.0084 7.09114 21H16.9089Z"
+										stroke="white" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								support@zone.com</a></li>
+					</ul>
+					<ul class="contact__get-in-touch">
+						<li><a href="#"><svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle cx="16.1" cy="16.1" r="15.6" fill="url(#paint0_linear_1_460)"
+										fill-opacity="0.05" stroke="url(#paint1_linear_1_460)" />
+									<path
+										d="M13.9658 24.5738V16.6216H11.8631V13.7585H13.9658V11.3129C13.9658 9.39123 15.2079 7.62646 18.07 7.62646C19.2287 7.62646 20.0856 7.73755 20.0856 7.73755L20.0181 10.4113C20.0181 10.4113 19.1442 10.4028 18.1906 10.4028C17.1585 10.4028 16.9932 10.8784 16.9932 11.6678V13.7585H20.1001L19.965 16.6216H16.9932V24.5738H13.9658Z"
+										fill="white" fill-opacity="0.8" />
+									<defs>
+										<linearGradient id="paint0_linear_1_460" x1="16.1" y1="0" x2="16.1" y2="32.2"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FEFEFF" stop-opacity="0.29" />
+											<stop offset="1" stop-color="white" stop-opacity="0.4" />
+										</linearGradient>
+										<linearGradient id="paint1_linear_1_460" x1="-1.54448" y1="2.15937" x2="35.5021"
+											y2="6.78831" gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" stop-opacity="0.08" />
+											<stop offset="1" stop-color="white" stop-opacity="0.07" />
+										</linearGradient>
+									</defs>
+								</svg>
+							</a></li>
+						<li><a href="#"><svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle cx="16.3" cy="16.1" r="15.6" fill="url(#paint0_linear_1_463)"
+										fill-opacity="0.05" stroke="url(#paint1_linear_1_463)" />
+									<path
+										d="M24.7737 10.9568C24.1505 11.2256 23.4723 11.4191 22.7737 11.4945C23.499 11.0636 24.0421 10.3828 24.3012 9.57996C23.6206 9.98483 22.875 10.2687 22.0975 10.4191C21.7725 10.0717 21.3795 9.79491 20.9429 9.60604C20.5063 9.41718 20.0355 9.32025 19.5598 9.3213C17.6351 9.3213 16.0872 10.8814 16.0872 12.7959C16.0872 13.0647 16.1198 13.3336 16.1727 13.5923C13.2908 13.4415 10.7205 12.0647 9.01171 9.95675C8.70035 10.4886 8.53719 11.0941 8.5392 11.7103C8.5392 12.9161 9.15225 13.9792 10.0871 14.6045C9.53617 14.5828 8.99815 14.4314 8.5168 14.1625V14.2053C8.5168 15.8937 9.7103 17.2929 11.301 17.6147C11.0023 17.6923 10.6951 17.732 10.3865 17.7329C10.1604 17.7329 9.94656 17.7105 9.73067 17.6799C10.1706 19.0567 11.4517 20.0567 12.9772 20.0893C11.7837 21.0242 10.2887 21.5741 8.66547 21.5741C8.37423 21.5741 8.10538 21.5639 7.82635 21.5313C9.3661 22.5191 11.193 23.0894 13.1605 23.0894C19.5476 23.0894 23.0425 17.798 23.0425 13.2053C23.0425 13.0546 23.0425 12.9039 23.0323 12.7531C23.7085 12.2582 24.3012 11.6452 24.7737 10.9568Z"
+										fill="white" fill-opacity="0.8" />
+									<defs>
+										<linearGradient id="paint0_linear_1_463" x1="16.3" y1="0" x2="16.3" y2="32.2"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FEFEFF" stop-opacity="0.29" />
+											<stop offset="1" stop-color="white" stop-opacity="0.4" />
+										</linearGradient>
+										<linearGradient id="paint1_linear_1_463" x1="-1.34446" y1="2.15937" x2="35.7022"
+											y2="6.78831" gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" stop-opacity="0.08" />
+											<stop offset="1" stop-color="white" stop-opacity="0.07" />
+										</linearGradient>
+									</defs>
+								</svg>
+							</a></li>
+						<li><a href="#"><svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle cx="16.5" cy="16.1" r="15.6" fill="url(#paint0_linear_1_466)"
+										fill-opacity="0.05" stroke="url(#paint1_linear_1_466)" />
+									<path
+										d="M16.0744 13.8394C14.5962 13.8394 13.3899 15.0457 13.3899 16.5239C13.3899 18.0021 14.5962 19.2084 16.0744 19.2084C17.5526 19.2084 18.7589 18.0021 18.7589 16.5239C18.7589 15.0457 17.5526 13.8394 16.0744 13.8394ZM24.1258 16.5239C24.1258 15.4122 24.1359 14.3106 24.0734 13.201C24.011 11.9121 23.717 10.7683 22.7745 9.82578C21.83 8.88128 20.6881 8.58927 19.3993 8.52684C18.2876 8.46441 17.186 8.47448 16.0764 8.47448C14.9647 8.47448 13.8632 8.46441 12.7535 8.52684C11.4647 8.58927 10.3208 8.88329 9.3783 9.82578C8.4338 10.7703 8.14179 11.9121 8.07936 13.201C8.01693 14.3127 8.027 15.4142 8.027 16.5239C8.027 17.6335 8.01693 18.7371 8.07936 19.8467C8.14179 21.1356 8.43581 22.2795 9.3783 23.222C10.3228 24.1665 11.4647 24.4585 12.7535 24.5209C13.8652 24.5833 14.9668 24.5733 16.0764 24.5733C17.188 24.5733 18.2896 24.5833 19.3993 24.5209C20.6881 24.4585 21.832 24.1645 22.7745 23.222C23.719 22.2775 24.011 21.1356 24.0734 19.8467C24.1379 18.7371 24.1258 17.6355 24.1258 16.5239ZM16.0744 20.6543C13.7887 20.6543 11.944 18.8096 11.944 16.5239C11.944 14.2381 13.7887 12.3934 16.0744 12.3934C18.3601 12.3934 20.2048 14.2381 20.2048 16.5239C20.2048 18.8096 18.3601 20.6543 16.0744 20.6543ZM20.374 13.1889C19.8403 13.1889 19.4093 12.758 19.4093 12.2243C19.4093 11.6906 19.8403 11.2596 20.374 11.2596C20.9076 11.2596 21.3386 11.6906 21.3386 12.2243C21.3388 12.351 21.3139 12.4765 21.2655 12.5936C21.2171 12.7107 21.146 12.8171 21.0564 12.9067C20.9668 12.9963 20.8604 13.0674 20.7433 13.1158C20.6262 13.1642 20.5007 13.1891 20.374 13.1889Z"
+										fill="white" fill-opacity="0.8" />
+									<defs>
+										<linearGradient id="paint0_linear_1_466" x1="16.5" y1="0" x2="16.5" y2="32.2"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FEFEFF" stop-opacity="0.29" />
+											<stop offset="1" stop-color="white" stop-opacity="0.4" />
+										</linearGradient>
+										<linearGradient id="paint1_linear_1_466" x1="-1.14445" y1="2.15937" x2="35.9022"
+											y2="6.78831" gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" stop-opacity="0.08" />
+											<stop offset="1" stop-color="white" stop-opacity="0.07" />
+										</linearGradient>
+									</defs>
+								</svg>
+							</a></li>
+						<li><a href="#"><svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle cx="16.7" cy="16.1" r="15.6" fill="url(#paint0_linear_1_469)"
+										fill-opacity="0.05" stroke="url(#paint1_linear_1_469)" />
+									<path
+										d="M9.9212 13.7054C9.9212 12.9727 10.0493 12.2805 10.3017 11.6344C10.5428 11.0069 10.9011 10.431 11.3574 9.93736C11.8128 9.45018 12.3339 9.02891 12.9057 8.68573C13.4924 8.33082 14.1275 8.06307 14.7912 7.89087C15.4628 7.71449 16.1545 7.62554 16.8489 7.62622C17.9216 7.62622 18.9199 7.85319 19.8457 8.30525C20.7594 8.74906 21.5371 9.43016 22.0975 10.2773C22.6758 11.1391 22.963 12.1138 22.963 13.2006C22.963 13.8523 22.899 14.4899 22.7681 15.1134C22.6395 15.7365 22.4352 16.3415 22.1597 16.915C21.897 17.4702 21.5536 17.9833 21.1406 18.4379C20.7256 18.8852 20.2229 19.2423 19.6639 19.487C19.0571 19.753 18.4006 19.8869 17.738 19.8797C17.2775 19.8797 16.8179 19.7714 16.3639 19.5539C15.91 19.3373 15.5841 19.0397 15.3882 18.6583C15.3195 18.9229 15.2253 19.3053 15.1001 19.8053C14.9795 20.3045 14.8985 20.6266 14.8627 20.7726C14.8251 20.9176 14.7554 21.1596 14.6537 21.4949C14.5847 21.7429 14.4962 21.9851 14.389 22.2191L14.065 22.8539C13.9249 23.1263 13.7683 23.3898 13.596 23.6431C13.4256 23.8899 13.2146 24.1846 12.9632 24.5237L12.8228 24.5736L12.7296 24.4719C12.6288 23.4048 12.577 22.7663 12.577 22.5554C12.577 21.9309 12.6514 21.2303 12.7983 20.4524C12.9424 19.6754 13.1704 18.6988 13.4764 17.5244C13.7825 16.3509 13.9577 15.6606 14.0048 15.4562C13.7891 15.0164 13.6799 14.4419 13.6799 13.7356C13.6799 13.1714 13.856 12.6431 14.2091 12.1458C14.5632 11.6505 15.0106 11.4028 15.5531 11.4028C15.9684 11.4028 16.2905 11.5403 16.5212 11.8162C16.7529 12.0912 16.8659 12.4378 16.8659 12.8606C16.8659 13.3089 16.7171 13.9578 16.4176 14.8064C16.1181 15.6559 15.9693 16.2897 15.9693 16.7107C15.9693 17.1373 16.1219 17.4942 16.427 17.7739C16.7282 18.0538 17.1264 18.2054 17.5374 18.1968C17.9103 18.1968 18.256 18.112 18.5771 17.9416C18.8932 17.7761 19.1669 17.5398 19.3767 17.2512C19.8337 16.6243 20.1594 15.9116 20.3345 15.1558C20.4249 14.7583 20.4946 14.3807 20.5379 14.0256C20.5841 13.6687 20.6038 13.3315 20.6038 13.0113C20.6038 11.8369 20.2309 10.9215 19.4897 10.266C18.7448 9.61056 17.7747 9.2847 16.5815 9.2847C15.2244 9.2847 14.0895 9.72357 13.1807 10.6041C12.2709 11.4819 11.8132 12.5979 11.8132 13.9512C11.8132 14.2498 11.8584 14.538 11.9441 14.8167C12.028 15.0946 12.1193 15.3159 12.2182 15.4797C12.3162 15.6408 12.4084 15.7981 12.4923 15.9431C12.577 16.0881 12.6213 16.1917 12.6213 16.2539C12.6213 16.4441 12.5714 16.6918 12.4706 16.9979C12.3661 17.304 12.2427 17.4565 12.0939 17.4565C12.0798 17.4565 12.0214 17.4462 11.9197 17.4245C11.5674 17.3194 11.2493 17.1228 10.9977 16.8547C10.7306 16.577 10.5199 16.2501 10.377 15.8922C10.2346 15.5356 10.1237 15.1673 10.0455 14.7913C9.96107 14.4356 9.91934 14.071 9.9212 13.7054Z"
+										fill="white" fill-opacity="0.8" />
+									<defs>
+										<linearGradient id="paint0_linear_1_469" x1="16.7" y1="0" x2="16.7" y2="32.2"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FEFEFF" stop-opacity="0.29" />
+											<stop offset="1" stop-color="white" stop-opacity="0.4" />
+										</linearGradient>
+										<linearGradient id="paint1_linear_1_469" x1="-0.94444" y1="2.15937" x2="36.1022"
+											y2="6.78831" gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" stop-opacity="0.08" />
+											<stop offset="1" stop-color="white" stop-opacity="0.07" />
+										</linearGradient>
+									</defs>
+								</svg>
+							</a></li>
+					</ul>
+				</div>
+				<ul class="contact__service">
+					<li><a class="contact__bold" href="#">Service</a></li>
+					<li><a href="#">Order Management</a></li>
+					<li><a href="#">Social Assistant</a></li>
+					<li><a href="#">Crypto Platform</a></li>
+					<li><a href="#">Analyzer of the News</a></li>
+				</ul>
+				<ul class="contact__company">
+					<li><a class="contact__bold" href="#">Company</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Our trusted partner</a></li>
+					<li><a href="#">New users FAQ</a></li>
+				</ul>
+				<ul class="contact__supports">
+					<li><a class="contact__bold" href="#">Supports</a></li>
+					<li><a href="#">Help center</a></li>
+					<li><a href="#">Feedbcak</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Terms conditins</a></li>
+				</ul>
+				<ul class="contact__resources">
+					<li><a class="contact__bold" href="#">Resources</a></li>
+					<li><a href="#">Download app</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">What s new</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer" id="footer">
+		<div class="footer-policy">
+			<div class="container footer-policy__container">
+				<div class="footer-policy__copy">&#169; <span id="year"></span> Zone. - All rights reserved.</div>
+				<a href="/" class="footer-policy__link">Privacy</a>
+				<a href="/" class="footer-policy__link">Security</a>
+				<a href="/" class="footer-policy__link">Terms</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

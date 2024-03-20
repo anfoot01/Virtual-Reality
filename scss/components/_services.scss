@@ -1,0 +1,90 @@
+.services {
+    margin-bottom: 120rem;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 30rem;
+        margin-bottom: 40rem;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__desc {
+        max-width: 587rem;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(370rem, 1fr));
+        gap: 30rem;
+    }
+
+    &__item {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 34rem;
+        padding: 37rem 23rem 30rem 23rem;
+        transition: .3s all ease-in-out;
+        &__img {
+            text-align: center;
+            margin-bottom: 19rem;
+        }
+
+        &__img img {
+            padding: 14rem;
+            border-radius: 55rem;
+        }
+
+        &__title {
+            color: rgb(255, 255, 255);
+            font-family: var(--font-family);
+            font-size: 24rem;
+            font-weight: 500;
+            line-height: 31rem;
+            text-align: center;
+            margin-bottom: 17rem;
+        }
+        &__desc {
+            margin-bottom: 24rem;
+        }
+        &__a {
+            margin-left: calc(50% - 50rem);
+        }
+        &__a svg{
+            transform: translateY(7rem);
+            @include mobile{
+                transform: translateY(10rem);
+            }
+        }
+    }
+    &__item:hover{
+        transform: scale(1.05);
+    }
+}
+
+.color-1 img {
+    background: linear-gradient(180.00deg, rgb(138, 127, 217), rgb(64, 47, 143) 100%);
+}
+
+.color-2 img {
+    background: linear-gradient(180.00deg, rgb(217, 127, 149), rgb(146, 50, 80) 100%);
+}
+
+.color-3 img {
+    background: linear-gradient(180.00deg, rgb(132, 216, 237), rgb(66, 146, 187) 100%);
+}
+
+.color-4 img {
+    background: linear-gradient(180.00deg, rgb(146, 239, 195), rgb(47, 143, 91) 100%);
+}
+
+.color-5 img {
+    background: linear-gradient(180.00deg, rgb(188, 127, 217), rgb(146, 50, 131) 100%);
+}
+
+.color-6 img {
+    background: linear-gradient(180.00deg, rgb(134, 132, 237), rgb(66, 71, 187) 100%);
+}
